@@ -10,3 +10,4 @@ request. Read [the contribution guide](CONTRIBUTING.md) first, so none of us
 are playing twenty questions over a mystery ZIP at 2am.
 
 The catalog itself and its field rules live in [catalog/](catalog/).
+<img width="498" height="322" alt="GhlX5T8A" src="https://github.com/user-attachments/assets/4d3fdc1e-221c-4c8a-8ccd-f7341cce6b47" />
