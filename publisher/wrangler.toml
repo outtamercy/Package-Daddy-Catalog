@@ -1,0 +1,12 @@
+name = "package-daddy-catalog-publisher"
+main = "src/index.js"
+compatibility_date = "2026-10-20"
+
+[vars]
+GITHUB_OWNER = "outtamercy"
+GITHUB_REPOSITORY = "Package-Daddy-Catalog"
+CATALOG_PATH = "catalog/package_daddy_catalog.json"
+
+# Set these with `wrangler secret put`, never in this file:
+# GITHUB_APP_ID
+# GITHUB_APP_PRIVATE_KEY
