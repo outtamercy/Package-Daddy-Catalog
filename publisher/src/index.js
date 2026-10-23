@@ -56,7 +56,11 @@ function validate(input) {
   record.id = clean(raw.id, 80).toLowerCase(); record.name = clean(raw.name, 160); record.kind = clean(raw.kind, 30);
   if (!/^[a-z0-9][a-z0-9-]{1,79}$/.test(record.id)) problems.push("Catalog ID must be lowercase words joined with hyphens.");
   if (record.name.length < 2 || toxic(record.name)) problems.push("Project name is missing or contains rejected text.");
+<<<<<<< Updated upstream
   if (!new Set(["mo2-plugin", "mo2-tool", "mo2-theme", "mo2-mod"]).has(record.kind)) problems.push("Kind must be an MO2 plugin, tool, theme, or mod.");
+=======
+  if (!new Set(["mo2-plugin", "mo2-tool", "mo2-theme", "mo2-resource"]).has(record.kind)) problems.push("Kind must be an MO2 plugin, tool, theme, or mod author resource.");
+>>>>>>> Stashed changes
   if (Array.isArray(raw.archive_terms)) record.archive_terms = [...new Set(raw.archive_terms.map((item) => clean(item, 48).toLowerCase()).filter((item) => item.length >= 2))].slice(0, 12);
   if (raw.state) record.state = clean(raw.state, 32);
   if (raw.compatibility) record.compatibility = clean(raw.compatibility, 32);
